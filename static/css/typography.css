@@ -28,10 +28,13 @@ h1 {
 	margin: 0 0 2rem;
 	position: relative;
 	overflow: hidden;
+
 }
 
 h2 {
 	font-size: clamp(1.8rem, calc(1.8rem + 1vw), 2.5rem);
+	text-decoration: none !important;
+	border-bottom: none;
 }
 
 h3 {
@@ -54,8 +57,7 @@ h6 {
 
 a {
 	color: var(--darker);
-	text-decoration-thickness: 1px;
-	text-decoration-color: var(--dark);
+	text-decoration: none;
 }
 
 ul {
@@ -69,4 +71,8 @@ ul ul {
 
 ul::marker {
 	color: var(--accent);
+}
+
+a:hover {
+	color: aqua;
 }

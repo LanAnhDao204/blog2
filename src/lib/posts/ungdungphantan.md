@@ -2,7 +2,7 @@
 title: "Khám Phá Hệ Thống Phân Tán: Khái Niệm, Ứng Dụng và Kiến Trúc"
 date: "2025-04-28"
 excerpt: "Hệ thống phân tán ngày càng đóng vai trò quan trọng trong việc xây dựng các ứng dụng lớn và phức tạp. Bài viết này sẽ cung cấp cái nhìn tổng quan về hệ thống phân tán, các khái niệm và thuật ngữ quan trọng, cùng với một ví dụ minh họa."
-coverImage: "/images/distributed_system.jpg"
+coverImage: "/images/dien-toan-phan-tan.jpg"
 ---
 
 # Hệ Thống Phân Tán Là Gì?
