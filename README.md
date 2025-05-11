@@ -4,11 +4,6 @@
 
 Xin chào, tôi tên là Đào Lan Anh. Bạn có thể gọi tôi là Lan Anh. Tôi đang là sinh viên năm 3 chuyên ngành Công nghệ Thông tin.
 
-## Học vấn
-
-- **Hiện tại**: Sinh viên năm 3 chuyên ngành Công nghệ Thông tin, trường đại học Phenikaa
-
-
 ## Thông tin liên hệ
 
 - **Email**: daolananh204@gmail.com

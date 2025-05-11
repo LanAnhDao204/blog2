@@ -1,41 +1,40 @@
 ---
-title: "Khám Phá Hệ Thống Phân Tán: Khái Niệm, Ứng Dụng và Kiến Trúc"
+title: "Hệ Thống Phân Tán"
 date: "2025-04-28"
 categories: ["hệ thống phân tán", "công nghệ phần mềm"]
 excerpt: "Hệ thống phân tán ngày càng đóng vai trò quan trọng trong việc xây dựng các ứng dụng lớn và phức tạp. Bài viết này sẽ cung cấp cái nhìn tổng quan về hệ thống phân tán, các khái niệm và thuật ngữ quan trọng, cùng với một ví dụ minh họa."
-coverImage: "/images/dien-toan-phan-tan.jpg"
+coverImage: "/images/htpt.png"
 ---
 
 # Hệ Thống Phân Tán Là Gì?
 
 Hệ thống phân tán là một hệ thống bao gồm nhiều máy tính, các node, hoặc các thành phần phần mềm khác nhau, được kết nối với nhau qua mạng và phối hợp làm việc để thực hiện một nhiệm vụ chung. Các hệ thống này thường không chia sẻ bộ nhớ chung, mà thay vào đó, mỗi thành phần trong hệ thống có thể có bộ nhớ và tài nguyên riêng của nó. Mặc dù các thành phần này phân tán, nhưng chúng hoạt động như một hệ thống duy nhất để xử lý các yêu cầu từ người dùng.
 
-Hệ thống phân tán rất phổ biến trong các ứng dụng yêu cầu khả năng mở rộng, tính sẵn sàng cao và khả năng chịu lỗi.
+Một cách hiểu đơn giản, hệ thống phân tán giống như một đội làm việc: mỗi thành viên có nhiệm vụ riêng (phân tán), nhưng họ giao tiếp và phối hợp để hoàn thành mục tiêu chung.
 
 # Các Ứng Dụng Của Hệ Thống Phân Tán
 
 Hệ thống phân tán được sử dụng trong nhiều ứng dụng và lĩnh vực khác nhau, bao gồm:
 
-- **Cloud Computing**: Dịch vụ đám mây như AWS, Google Cloud, và Microsoft Azure dựa trên các hệ thống phân tán để cung cấp tài nguyên tính toán linh hoạt.
-- **Big Data**: Các công cụ như Hadoop và Apache Spark sử dụng hệ thống phân tán để xử lý và phân tích dữ liệu quy mô lớn.
-- **Web Services**: Các dịch vụ web có thể triển khai dưới dạng hệ thống phân tán để xử lý hàng triệu yêu cầu từ người dùng.
-- **Internet of Things (IoT)**: Các ứng dụng IoT thường sử dụng hệ thống phân tán để kết nối và quản lý hàng triệu thiết bị trên toàn cầu.
+1. **Internet và World Wide Web**: Là một hệ thống phân tán khổng lồ với hàng triệu máy chủ và máy khách kết nối với nhau.
+2. **Điện toán đám mây**: AWS, Google Cloud, Microsoft Azure cung cấp dịch vụ dựa trên các hệ thống phân tán quy mô lớn.
+3. **Mạng xã hội**: Facebook, Twitter, Instagram xử lý hàng tỷ tương tác người dùng trên các máy chủ phân tán toàn cầu.
+4. **Hệ thống phân phối nội dung (CDN)**: Akamai, Cloudflare giúp phân phối nội dung web nhanh chóng đến người dùng trên toàn cầu.
+5. **Hệ thống IoT (Internet of Things)**: Kết nối hàng tỷ thiết bị thông minh với nhau và với các hệ thống xử lý dữ liệu.
 
 # Các Khái Niệm Chính Của Hệ Thống Phân Tán
 
-Khi làm việc với hệ thống phân tán, có một số khái niệm quan trọng mà chúng ta cần hiểu rõ:
-
-- **Scalability (Khả năng mở rộng)**: Là khả năng của hệ thống phân tán để xử lý một lượng công việc lớn hơn bằng cách thêm các tài nguyên (thường là các node mới).
-- **Fault Tolerance (Khả năng chịu lỗi)**: Là khả năng của hệ thống để tiếp tục hoạt động bình thường ngay cả khi một hoặc nhiều thành phần gặp sự cố.
-- **Availability (Tính sẵn sàng)**: Đề cập đến khả năng của hệ thống để cung cấp dịch vụ liên tục, ngay cả khi một số thành phần gặp sự cố.
-- **Transparency (Tính minh bạch)**: Là mức độ mà các chi tiết của hệ thống phân tán được ẩn đi khỏi người dùng và ứng dụng.
-- **Concurrency (Tính đồng thời)**: Là khả năng của hệ thống phân tán để xử lý nhiều nhiệm vụ đồng thời.
-- **Parallelism (Tính song song)**: Là khả năng của hệ thống phân tán để thực thi các nhiệm vụ hoặc các phần của một nhiệm vụ song song trên nhiều máy tính khác nhau.
-- **Openness (Tính mở)**: Là tính linh hoạt trong việc tích hợp các thành phần khác nhau vào hệ thống phân tán mà không gặp phải sự cố tương thích.
-- **Vertical Scaling (Mở rộng theo chiều dọc)**: Là quá trình tăng cường tài nguyên của một node duy nhất, như nâng cấp CPU hoặc RAM.
-- **Horizontal Scaling (Mở rộng theo chiều ngang)**: Là quá trình thêm nhiều node vào hệ thống để tăng khả năng xử lý.
-- **Load Balancer (Cân bằng tải)**: Là phần mềm hoặc phần cứng giúp phân phối các yêu cầu đến các node trong hệ thống một cách hợp lý để tránh quá tải.
-- **Replication (Sao chép)**: Là việc sao chép dữ liệu giữa các node trong hệ thống phân tán để tăng tính sẵn sàng và độ bền của dữ liệu.
+- **Scalability (Khả năng mở rộng)**: Khả năng hệ thống đáp ứng với việc tăng tải công việc bằng cách thêm tài nguyên. Một hệ thống có khả năng mở rộng tốt sẽ hoạt động hiệu quả khi quy mô tăng lên.
+- **Fault Tolerance (Khả năng chịu lỗi)**: Khả năng hệ thống tiếp tục hoạt động đúng ngay cả khi một số thành phần gặp sự cố. Hệ thống phân tán cần được thiết kế để duy trì dịch vụ dù có lỗi xảy ra.
+- **Availability (Tính sẵn sàng)**: Tỷ lệ thời gian hệ thống hoạt động và sẵn sàng phục vụ yêu cầu. Thường được đo bằng phần trăm (ví dụ: 99.99% uptime).
+- **Transparency (Tính trong suốt)**: Khả năng che giấu sự phức tạp và phân tán của hệ thống khỏi người dùng và ứng dụng. Người dùng chỉ thấy một hệ thống đơn nhất, không cần biết về các chi tiết bên trong.
+- **Concurrency (Tính đồng thời)**: Khả năng xử lý nhiều tác vụ cùng một lúc. Trong hệ thống phân tán, nhiều thành phần có thể hoạt động đồng thời, yêu cầu cơ chế điều phối.
+- **Parallelism (Tính song song)**: Thực hiện nhiều phép tính cùng một lúc, phân chia một vấn đề lớn thành các phần nhỏ hơn để xử lý đồng thời trên nhiều máy tính.
+- **Openness (Tính mở)**: Khả năng mở rộng và tích hợp các thành phần mới vào hệ thống, thường thông qua việc sử dụng các tiêu chuẩn và giao thức mở.
+- **Vertical Scaling (Mở rộng theo chiều dọc)**: Nâng cấp phần cứng của một máy chủ hiện có (thêm CPU, RAM, ổ cứng) để tăng hiệu suất.
+- **Horizontal Scaling (Mở rộng theo chiều ngang)**: Thêm nhiều máy chủ vào hệ thống để phân phối tải. Phương pháp này thường linh hoạt và hiệu quả hơn so với mở rộng theo chiều dọc.
+- **Load Balancer (Cân bằng tải)**: Thành phần phân phối tải công việc đến nhiều máy chủ để tối ưu hóa việc sử dụng tài nguyên, tăng thông lượng và giảm thời gian phản hồi.
+- **Replication (Sao chép)**: Tạo và duy trì bản sao của dữ liệu hoặc dịch vụ trên nhiều máy chủ để tăng độ tin cậy, khả năng chịu lỗi và hiệu suất.
 
 # Ví Dụ Và Giải Thích Các Thuật Ngữ
 
@@ -57,18 +56,26 @@ Giả sử chúng ta có một dịch vụ web lớn, nơi người dùng có th
 
 Kiến trúc của hệ thống phân tán có thể rất đa dạng, tùy thuộc vào mục đích sử dụng và các yêu cầu của hệ thống. Dưới đây là một số mô hình kiến trúc phổ biến:
 
-1. **Client-Server Architecture**: Trong mô hình này, các client gửi yêu cầu đến server, và server xử lý các yêu cầu này. Hệ thống có thể mở rộng bằng cách thêm nhiều server.
+1. **Kiến trúc Client-Server**: Trong mô hình này, các client gửi yêu cầu đến server, và server xử lý các yêu cầu này. Hệ thống có thể mở rộng bằng cách thêm nhiều server.
+![Minh họa Kiến trúc Client-Server](/images/cilents-server.webp)
    
-2. **Peer-to-Peer (P2P)**: Các node trong hệ thống phân tán hoạt động như peer, chia sẻ tài nguyên và xử lý yêu cầu mà không cần một server trung tâm.
+2. **Kiến trúc Peer-to-Peer (P2P)**: Các node trong hệ thống phân tán hoạt động như peer, chia sẻ tài nguyên và xử lý yêu cầu mà không cần một server trung tâm.
+![Minh họa Kiến trúc p2p](/images/p2p.png)
 
-3. **Master-Slave Architecture**: Một node chịu trách nhiệm chính (master), trong khi các node khác (slave) phục vụ các yêu cầu phụ trợ hoặc sao chép dữ liệu từ master.
+3. **Kiến trúc Serverless**: Nhà cung cấp đám mây quản lý tài nguyên, người dùng chỉ viết mã. Ví dụ: AWS Lambda, Google Cloud Functions.
+![Minh họa Kiến trúc svl](/images/svl.webp)
 
-4. **Microservices Architecture**: Các dịch vụ nhỏ độc lập, mỗi dịch vụ thực hiện một tác vụ cụ thể và giao tiếp với nhau qua API. Kiến trúc này rất phổ biến trong các hệ thống phân tán hiện đại.
+4. **Kiến trúc Microservices**: Các dịch vụ nhỏ độc lập, mỗi dịch vụ thực hiện một tác vụ cụ thể và giao tiếp với nhau qua API. Kiến trúc này rất phổ biến trong các hệ thống phân tán hiện đại.
+![Minh họa Kiến trúc Microservices](/images/mcrs.webp)
 
-# Ví Dụ Về Kiến Trúc Hệ Thống Phân Tán
+# Ví dụ : Kiến trúc của Netflix
+Netflix sử dụng kiến trúc microservices với hơn 700 dịch vụ độc lập:
+![Minh họa Kiến trúc Microservices](/images/cloud-netflix-1.jpeg)
 
-Một ví dụ điển hình về hệ thống phân tán là **Amazon Web Services (AWS)**. AWS sử dụng các mô hình kiến trúc như Client-Server và Microservices để cung cấp các dịch vụ đám mây cho hàng triệu khách hàng trên toàn cầu. Các dịch vụ này có thể mở rộng theo chiều ngang, có khả năng chịu lỗi cao, và đảm bảo tính sẵn sàng cao thông qua việc sao chép dữ liệu và cân bằng tải.
+- **API Gateway**: Điểm vào duy nhất cho tất cả các yêu cầu từ thiết bị người dùng.
+- **Dịch vụ khuyến nghị**: Phân tích dữ liệu người dùng để đề xuất nội dung.
+- **Dịch vụ streaming**: Phụ trách việc cung cấp video đến người dùng.
+- **Dịch vụ thanh toán**: Xử lý giao dịch và thanh toán tự động.
+- **CDN**: Sử dụng mạng phân phối nội dung toàn cầu để đưa video đến gần người dùng.
 
----
 
-Hệ thống phân tán đóng vai trò cực kỳ quan trọng trong thế giới công nghệ ngày nay. Việc hiểu rõ các khái niệm và kiến trúc của hệ thống phân tán giúp chúng ta xây dựng các hệ thống có khả năng mở rộng, sẵn sàng và chịu lỗi, đáp ứng được nhu cầu ngày càng tăng của các ứng dụng và dịch vụ.
