@@ -24,6 +24,7 @@ footer {
 
 :where(header, footer) a:hover {
 	text-decoration: underline;
+	color: rgb(172, 34, 117);
 }
 
 :where(header, footer) svg {
