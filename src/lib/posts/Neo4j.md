@@ -166,7 +166,6 @@ Neo4j là một cơ sở dữ liệu đồ thị (graph database) được thi�
     - Cân nhắc cả “chất lượng” của mối liên hệ, không chỉ là số lượng  
     - Hiệu suất cao hơn 10-100 lần so với SQL tương đương cho đề xuất phức tạp  
 **2. Dijkstra Path Finding: Phân tích hành trình đọc Cách hoạt động:** Thuật toán tìm đường đi tối ưu được điều chỉnh để phân tích và đề xuất “hành trình đọc” cho người dùng, giúp họ di chuyển từ nội dung hiện tại đến nội dung tiếp theo một cách tự nhiên.  
-
 **Ưu điểm so với SQL:**
     - Tìm đường đi tối ưu trong mạng lưới nội dung phức tạp
     - Hỗ trợ trọng số (thời gian đọc, đánh giá) để xác định đường đi có giá trị nhất
