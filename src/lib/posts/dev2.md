@@ -12,7 +12,7 @@ excerpt: "Deliverable 2 - Website"
 ---
 ## Thiết kế hệ thống (Deliverable 2)	
 ### 1. Bản vẽ kiến trúc hệ thống: 
-![Bản vẽ kiến trúc hệ thống](/images/GK2/neo4j.png)
+![Bản vẽ kiến trúc hệ thống](/images/bve.jpg)
 
 ### 2.Thành phần chính
 **1.Frontend (React/ViteJS):**
@@ -37,7 +37,7 @@ excerpt: "Deliverable 2 - Website"
 
 **3.Database (Neo4j):**
 
-![Database](/images/GK2/database.jpg)
+![Database](/images/dtb.jpg)
 
 **Vai trò:**
 - Lưu trữ dữ liệu sách, tác giả, thể loại dưới dạng đồ thị.
