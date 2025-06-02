@@ -11,18 +11,19 @@ Neo4j là một cơ sở dữ liệu đồ thị (graph database) được thi�
 
 # Đồ thị có thể giải quyết vấn đề gì?
     Cơ sở dữ liệu đồ thị như Neo4j đặc biệt hiệu quả trong các bài toán liên quan đến:  
-**1. Phân tích mối quan hệ phức tạp:**  
-    - Mạng xã hội: Tìm bạn bè chung, gợi ý kết nối.  
-    - Hệ thống khuyến nghị: Gợi ý sản phẩm/dịch vụ dựa trên hành vi người dùng.  
-    - Quản lý kiến thức: Liên kết thông tin trong các lĩnh vực như y tế, pháp lý.  
+
+**1. Phân tích mối quan hệ phức tạp**:   
+- Mạng xã hội: Tìm bạn bè chung, gợi ý kết nối.  
+- Hệ thống khuyến nghị: Gợi ý sản phẩm/dịch vụ dựa trên hành vi người dùng.  
+- Quản lý kiến thức: Liên kết thông tin trong các lĩnh vực như y tế, pháp lý.  
 **2. Phát hiện gian lận:**  
-    - Phân tích các giao dịch tài chính để phát hiện hành vi bất thường.  
+- Phân tích các giao dịch tài chính để phát hiện hành vi bất thường.  
 **3. Quản lý mạng và cơ sở hạ tầng:**
-    - Quản lý mạng viễn thông, hệ thống CNTT, hoặc chuỗi cung ứng.  
+- Quản lý mạng viễn thông, hệ thống CNTT, hoặc chuỗi cung ứng.  
 **4. Tìm kiếm đường đi và tối ưu hóa:**
-    - Tính toán lộ trình tối ưu trong logistics hoặc định tuyến mạng.  
+- Tính toán lộ trình tối ưu trong logistics hoặc định tuyến mạng.  
 **5. Phân tích dữ liệu thời gian thực:**
-    - Xử lý các truy vấn phức tạp về mối quan hệ với hiệu suất cao.  
+- Xử lý các truy vấn phức tạp về mối quan hệ với hiệu suất cao.  
 
 # Điểm mạnh của Neo4j
 - Xử lý đồ thị tự nhiên & Hiệu suất cao: Tối ưu cho lưu trữ và truy vấn dữ liệu kết nối phức tạp, tốc độ duyệt quan hệ cực nhanh (nhờ "index-free adjacency").
